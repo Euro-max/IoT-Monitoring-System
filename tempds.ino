@@ -23,8 +23,8 @@
 //Provide the RTDB payload printing info and other helper functions.
 #include "addons/RTDBHelper.h"
 
-#define WIFI_SSID "Doomed"
-#define WIFI_PASSWORD "Windows 11 AI"
+#define WIFI_SSID "#####"
+#define WIFI_PASSWORD "#######"
 
 // Provide the token generation process info.
 #include <addons/TokenHelper.h>
@@ -38,14 +38,14 @@
 // For the following credentials, see examples/Authentications/SignInAsUser/EmailPassword/EmailPassword.ino
 #include <Firebase_ESP_Client.h>
 /* 2. Define the API Key */
-#define API_KEY "AIzaSyBeFpnG_2_C551O2k_CmMsjpbUkJWoB6po"
+#define API_KEY "API KEY"
 
 /* 3. Define the RTDB URL */
 #define DATABASE_URL "capstone-323-cf62c-default-rtdb.europe-west1.firebasedatabase.app" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
 
 /* 4. Define the user Email and password that alreadey registerd or added in your project */
-#define USER_EMAIL "ahmed2005stem@gmail.com"
-#define USER_PASSWORD "Windows 10"
+#define USER_EMAIL "#####@gmail.com"
+#define USER_PASSWORD "######"
 
 
 
