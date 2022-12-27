@@ -1,10 +1,3 @@
-/*
- * This ESP32 code is created by esp32io.com
- *
- * This ESP32 code is released in the public domain
- *
- * For more detail (instruction and wiring diagram), visit https://esp32io.com/tutorials/esp32-temperature-sensor
- */
 
 #if defined(ESP32)
 #include <WiFi.h>
@@ -35,7 +28,7 @@
 
 #include <OneWire.h>
 #include <DallasTemperature.h>
-// For the following credentials, see examples/Authentications/SignInAsUser/EmailPassword/EmailPassword.ino
+
 #include <Firebase_ESP_Client.h>
 /* 2. Define the API Key */
 #define API_KEY "API KEY"
@@ -131,17 +124,6 @@ void setup() {
 
   /* Assign the callback function for the long running token generation task */
   config.token_status_callback = tokenStatusCallback; // see addons/TokenHelper.h
-
-  // Or use legacy authenticate method
-  // config.database_url = DATABASE_URL;
-  // config.signer.tokens.legacy_token = "<database secret>";
-
-  // To connect without auth in Test Mode, see Authentications/TestMode/TestMode.ino
-
-  //////////////////////////////////////////////////////////////////////////////////////////////
-  // Please make sure the device free Heap is not lower than 80 k for ESP32 and 10 k for ESP8266,
-  // otherwise the SSL connection will fail.
-  //////////////////////////////////////////////////////////////////////////////////////////////
 
 #if defined(ESP8266)
   // In ESP8266 required for BearSSL rx/tx buffer for large data handle, increase Rx size as needed.
